@@ -15,8 +15,10 @@ An intelligent blog writing system powered by AI that automatically generates an
 - React + TypeScript
 - Vite
 - Tailwind CSS
-- Google Gemini AI
+- Google Gemini AI (JavaScript & Python SDKs)
 - Shopify Admin API
+- Python (Enhanced AI service)
+- Pydantic (Structured data validation)
 
 ## Setup
 
@@ -52,11 +54,34 @@ npm run dev
 
 ### 4. Auto-Poster (Optional)
 
-To run the automatic blog poster:
-
+#### JavaScript Version (Original)
 ```bash
 node auto-poster.js
 ```
+
+#### Python Version (Enhanced) 🆕
+
+The new Python service offers structured outputs and improved reliability:
+
+```bash
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Test the enhanced service
+python test_gemini_service.py
+
+# Run the enhanced auto-poster
+python auto_poster.py
+```
+
+**Key improvements in Python version:**
+- ✅ Structured JSON outputs with Pydantic validation
+- ✅ Better error handling and fallbacks
+- ✅ Customer persona generation for Pakistani market
+- ✅ Enhanced SEO analysis and recommendations
+- ✅ Comprehensive logging and debugging
+
+📖 [Full Python Setup Guide](PYTHON_SETUP.md)
 
 ## Important Security Notes
 

@@ -1,0 +1,38 @@
+# Python dependencies for the enhanced Gemini AI service
+
+# Core Google Generative AI SDK (new Python version)
+google-genai>=0.3.0
+
+# Data validation and settings management
+pydantic>=2.0.0
+
+# Async support
+asyncio
+
+# HTTP requests (for potential Shopify integration)
+requests>=2.28.0
+httpx>=0.24.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# JSON handling (built-in, but explicit for clarity)
+# json - built-in
+
+# Date and time utilities (built-in)
+# datetime - built-in
+
+# Type hints support  
+typing-extensions>=4.5.0
+
+# Task scheduling
+schedule>=1.2.0
+
+# Optional: For potential FastAPI integration later
+# fastapi>=0.100.0
+# uvicorn>=0.22.0
+
+# Optional: For database integration later
+# sqlalchemy>=2.0.0
+# psycopg2-binary>=2.9.0  # PostgreSQL
+# mysql-connector-python>=8.0.0  # MySQL

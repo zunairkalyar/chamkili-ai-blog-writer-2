@@ -13,12 +13,9 @@ from pathlib import Path
 # Add the project root to the path so we can import our services
 sys.path.append(str(Path(__file__).parent.parent))
 
-try:
-    from services.gemini_service import gemini_service
-    GEMINI_SERVICE_AVAILABLE = True
-except ImportError as e:
-    GEMINI_SERVICE_AVAILABLE = False
-    IMPORT_ERROR = str(e)
+# Simplified service for Vercel compatibility
+GEMINI_SERVICE_AVAILABLE = False
+IMPORT_ERROR = "Service temporarily unavailable - running in Vercel serverless mode"
 
 class handler(BaseHTTPRequestHandler):
     """Vercel serverless function handler."""
